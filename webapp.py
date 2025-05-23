@@ -5,9 +5,9 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = pickle.load(open(r"C:\My folder\regression project\regression_model.pkl", "rb"))
-scaler = pickle.load(open(r"C:\My folder\regression project\scaler.pkl", "rb"))
-encoder = pickle.load(open(r"C:\My folder\regression project\label_encoder.pkl", "rb"))
+model = pickle.load(open("regression_model.pkl", "rb"))
+scaler = pickle.load(open("scaler.pkl", "rb"))
+encoder = pickle.load(open("label_encoder.pkl", "rb"))
 
 @app.route('/')
 def index():
